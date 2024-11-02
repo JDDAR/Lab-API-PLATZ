@@ -1,0 +1,48 @@
+@import "../variables";
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  padding: 15px;
+  margin-bottom: 50px;
+}
+.btn-cargar {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  height: 100px;
+  padding: 25px;
+  background-color: $color-font;
+  &__button {
+    padding: 15px 10px;
+    background: none;
+    border-color: $color-BG-primary;
+    border-radius: 12px;
+    color: $color-BG-primary;
+  }
+}
+
+.productCard {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .Imagen {
+    width: 100%;
+  }
+  h3 {
+    font-weight: 200;
+  }
+  p {
+    font-weight: 500;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba($color-font, 0.1);
+    width: 100%;
+  }
+  margin-bottom: 25px;
+  a {
+    text-decoration: none;
+    color: lightskyblue;
+  }
+}

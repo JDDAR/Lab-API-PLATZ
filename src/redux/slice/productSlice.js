@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  item: [],
+  items: [],
   status: "idle",
   error: null,
 };
@@ -14,8 +14,8 @@ const productSlice = createSlice({
       state.status = "loading";
     },
     fetchProductsSuccess(state, action) {
-      state.status = "failed";
-      state.error = action.payload;
+      state.status = "succeeded";
+      state.items = action.payload;
     },
     fetchProductsFailure(state, action) {
       state.status = "failed";

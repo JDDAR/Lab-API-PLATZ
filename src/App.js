@@ -1,7 +1,11 @@
+import Header from "./components/Header";
+import ProductList from "./components/ProductList";
+
 function App() {
   return (
     <div className="App">
-      <h1>Shop.API</h1>
+      <Header />
+      <ProductList />
     </div>
   );
 }

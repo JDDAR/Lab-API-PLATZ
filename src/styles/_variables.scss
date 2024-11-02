@@ -1,0 +1,16 @@
+@import "fonts";
+
+$font-family: "Poppins", sans-serif;
+$color-BG-primary: #f5f2f2;
+$color-font: #1e1e1e;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: $color-font;
+  background-color: $color-BG-primary;
+  font-family: $font-family;
+}

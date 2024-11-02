@@ -1,0 +1,53 @@
+@import "../variables";
+.Header {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 15px;
+  .menuHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba($color-font, 0.1);
+    padding-bottom: 15px;
+    &__logoBusqueda {
+      display: flex;
+      gap: 15px;
+      input {
+        border: none;
+        background: none;
+        border-bottom: 1px solid rgba($color-font, 0.1);
+      }
+    }
+    &__menuNav {
+      display: flex;
+      gap: 25px;
+      a {
+        text-decoration: none;
+        color: $color-font;
+        font-weight: 200;
+      }
+    }
+    &__login {
+      display: flex;
+      gap: 25px;
+      a {
+        text-decoration: none;
+        color: $color-font;
+        font-weight: 200;
+      }
+    }
+  }
+  .titleHeader {
+    display: flex;
+    justify-content: space-between;
+    &__none {
+      width: 80%;
+    }
+    &__title {
+      font-size: 2rem;
+      h1 {
+        font-weight: 400;
+      }
+    }
+  }
+}
